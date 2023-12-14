@@ -28,7 +28,7 @@ To keep a consistent style, there are rules to follow when writing code. They ar
 ### General
 
 - USe 2 spaces for indentation.
-- Use paces instead of tabs.
+- Use spaces instead of tabs.
 - Use single quotes over double quotes.
 - Use camelCase for variables and functions.
 - Use PascalCase for classes.
