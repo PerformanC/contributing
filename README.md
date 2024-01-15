@@ -47,31 +47,52 @@ To keep a consistent style, there are rules to follow when writing code. They ar
 - Prohibited usage of `;`, unless it is required.
 - Prohibited usage of `let`, or `const` without a value, must set to `null`.
 - Prohibited comments (// or /* */) in the code.
+- Prohibited `,` in the last item of an array or object.
+- Prohibited usage of CommonJS, use ES6 instead.
+- Prohibited usaage of `"`.
+- Order of imports:
+  - Node.js built-in modules. Must have `node:` prefix.
+  - Project modules.
+  - Third-party modules.
+- Functions may be declared before usage.
+- Code must be created as a function if used more than once, with `_` prefix. (private)
+- `const`s must be defined first than `let`s, save when it is required.
+- `return`s without a value must have a `;` at the end.
+
 
 ```js
 
 import { foo2 } from 'bar'
 
-function foo() {
-  foo2()
+function foo(value) {
+  const firstLetter = value[0]
+  let lastLetter = value[value.length - 1]
+  lastLetter = lastLetter === '!' ? '?' : lastLetter
 
-  return 'bar'
+  if (firstLetter === 'n') return;
+
+  return `${firstLetter.toUpperCase()}${value.slice(1, -1)}${lastLetter}`
 }
 
-console.log(foo())
+console.log(foo('yes!'))
+console.log(foo('no'))
 ```
+
+> [!NOTE]
+> The code above is only an example of the syntax, it is not a good example of code as doesn't make sense.
 
 ### C
 
-- Use C89 or C99 syntax, C89 is preferred.
+- Use C89 or C99, C89 is preferred.
 - Use functions over macros.
 - Use `#define` over `const`.
 - Use `struct` over `typedef struct`.
 - Use `NULL` over `0`.
 - Prohibited usage of glibc or musl.
 - Prohibited comments (// or /* */) in the code.
+- Prohibited usage of GNU extensions.
 - Discounraged use of dynamic memory allocation.
-- Recommended proper goto usage.
+- Recommended goto usage when appropriate.
 
 ```c
 #include <stdio.h>
@@ -106,8 +127,24 @@ int main(void) {
 - Same rules as JavaScript.
 
 ```dart
+/* Same code as JavaScript */
+import 'package:bar/bar.dart';
+
+String foo(String value) {
+  const firstLetter = value[0];
+  final lastLetter = value[value.length - 1];
+  lastLetter = lastLetter == '!' ? '?' : lastLetter;
+
+  if (firstLetter == 'n') return;
+
+  return '${firstLetter.toUpperCase()}${value.substring(1, value.length - 1)}$lastLetter';
+}
+
 void main() {
-  print('Hello, world!')
+  final foo = Foo();
+
+  print(foo('yes!'));
+  print(foo('no'));
 }
 ```
 
@@ -134,7 +171,7 @@ void main() {
 ## Commit Messages
 
 ```txt
-add | update | remove | fix | improve: short description
+add | update | remove | fix | improve | merge: short description (#PR merged)
 
 Full description of the commit.
 
