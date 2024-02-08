@@ -30,7 +30,7 @@ To keep a consistent style, there are rules to follow when writing code. They ar
 - USe 2 spaces for indentation.
 - Use spaces instead of tabs.
 - Use single quotes over double quotes.
-- Use camelCase for variables and functions.
+- Use camelCase for variables and functions. `C` is an exception.
 - Use PascalCase for classes.
 - Use SCREAMING_SNAKE_CASE for global constants or macros.
 - Prohibited any telemetry or analytics.
@@ -54,6 +54,7 @@ To keep a consistent style, there are rules to follow when writing code. They ar
   - Node.js built-in modules. Must have `node:` prefix.
   - Project modules.
   - Third-party modules.
+  - With a space between each group.
 - Functions may be declared before usage.
 - Code must be created as a function if used more than once, with `_` prefix. (private)
 - `const`s must be defined first than `let`s, save when it is required.
@@ -84,6 +85,7 @@ console.log(foo('no'))
 ### C
 
 - Use C89 or C99, C89 is preferred.
+- Use snake_case for variables and functions, with `libname_` prefix.
 - Use functions over macros.
 - Use `#define` over `const`.
 - Use `struct` over `typedef struct`.
@@ -93,6 +95,13 @@ console.log(foo('no'))
 - Prohibited usage of GNU extensions.
 - Discounraged use of dynamic memory allocation.
 - Recommended goto usage when appropriate.
+- Order of imports:
+  - C standard libraries, `stdio.h` and `stdlib.h` must be first.
+  - System libraries.
+  - Project libraries.
+  - Third-party libraries.
+  - Headers of the file, separated from all other imports.
+  - With a space between each group.
 
 ```c
 #include <stdio.h>
