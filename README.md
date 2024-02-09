@@ -49,7 +49,8 @@ To keep a consistent style, there are rules to follow when writing code. They ar
 - Prohibited comments (// or /* */) in the code.
 - Prohibited `,` in the last item of an array or object.
 - Prohibited usage of CommonJS, use ES6 instead.
-- Prohibited usaage of `"`.
+- Prohibited usage of `"`.
+- Prohibited usage of global Node.js modules without importing (`process`, `Buffer`, etc)
 - Order of imports:
   - Node.js built-in modules. Must have `node:` prefix.
   - Project modules.
