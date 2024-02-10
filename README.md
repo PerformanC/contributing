@@ -19,11 +19,26 @@ Guidelines for contributing to any PerformanC project.
 
 ## Code of Conduct
 
-For assuring a welcoming community, please read and follow the [Code of Conduct](CODE_OF_CONDUCT.md). If you have any questions or concerns, please contact the PerformanC Organization: performancorg@gmail.com.
+For assuring a welcoming community, please read and follow the [Code of Conduct](CODE_OF_CONDUCT.md). If you have any questions or concerns, please contact The PerformanC Organization: performancorg@gmail.com.
 
 ## Syntax
 
-To keep a consistent style, there are rules to follow when writing code. They are not enforced by any tool, but they are enforced by the community. If you have any questions or concerns, please contact the PerformanC Organization.
+To keep a consistent style, there are rules to follow when writing code. They are not enforced by any tool, but they are enforced by the community. If you have any questions or concerns, please contact The PerformanC Organization.
+
+### Project information
+
+PerformanC projects are divided into three categories:
+
+- Leading standard: Projects that follows all standards from The PerformanC Organization, and are used as examples for the community and new projects. They are cherry-picked by The PerformanC Organization core team.
+
+- Standard compliant: Projects following all the standards from The PerformanC Organization. Not leading standard projects, but are strictly following the standards of The PerformanC Organization.
+
+- Semi-Standard compliant: Projects that either use outdated standards, or are not following all the standards from The PerformanC Organization.
+
+- Non-compliant: Projects that do not follow the standards from The PerformanC Organization.
+
+> [!NOTE]
+> The PerformanC Organization is constantly working on improving the standards, and assuring that all projects are following them.
 
 ### General
 
@@ -32,9 +47,7 @@ To keep a consistent style, there are rules to follow when writing code. They ar
 - Use single quotes over double quotes.
 - Use camelCase for variables and functions. `C` is an exception.
 - Use PascalCase for classes.
-- Use SCREAMING_SNAKE_CASE for global constants or macros.
-- Prohibited any telemetry or analytics.
-- Prohibited any tracking or ads.
+- Use SCREAMING_SNAKE_CASE for global constants (immutable) or macros.
 
 ### JavaScript / TypeScript (Node.js)
 
@@ -188,7 +201,7 @@ Full description of the commit.
 Co-authored-by: name <email> (optional)
 ```
 
-> [!WARNING]
+> [!NOTE]
 > A project maintainer may change the commit message if it does not follow the guidelines.
 
 ## Issues
@@ -213,25 +226,25 @@ Issues are used to track bugs, feature requests, and more. Please follow the gui
 Pull requests are used to contribute to the project. Please follow the guidelines below when creating a pull request.
 
 - Use a descriptive title:
-  - Bad: `Fix #1`
-  - Good: `Fix: Connection timed out`
+  - Bad: `[BUG]: Network error` / `[BUG]: Connection error`
+  - Good: `[BUG]: Connection timed out`
 
 - Use a descriptive description:
   - Bad: `Fixed #1`
-  - Good: `Fixed the connection timeout error by adding a timeout option to the connect function.`
+  - Good: `Fixed the connection timeout error by adding a timeout option to the connect function. See #1 for more details.`
 
 ## License
 
-The licenses of the projects can only be changed by the PerformanC Organization core team. If you have any questions or concerns, please contact the PerformanC Organization.
+The licenses of the projects can only be changed by The PerformanC Organization core team. If you have any questions or concerns, please contact The PerformanC Organization.
 
-> [!WARNING]
+> [!IMPORTANT]
 > PerformanC Organization core team will never change the license of a project without a good reason, or with the intention of harming the community.
 
 ### Licenses
 
-- [Original license](ORIGINAL_LICENSE): The base license of the PerformanC Organization.
-- [NodeLink license](NODELINK_LICENSE): Protection 
+- [Original license](ORIGINAL_LICENSE): The base license of The PerformanC Organization.
+- [NodeLink & FrequenC license](NODES_LICENSE): Protection 
 - [PerforVNMaker license](PERFORVNMAKER_LICENSE)
 
-> [!WARNING]
-> This section is only for information purposes, the licenses of the projects can only be changed by the PerformanC Organization core team.
+> [!NOTE]
+> This section is only for informative purposes. The licenses of the projects can only be changed by The PerformanC Organization core team.
