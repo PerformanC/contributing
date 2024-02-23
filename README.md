@@ -4,6 +4,7 @@ Guidelines for contributing to any PerformanC project.
 
 ## Table of Contents
 
+- [Security Policy](#security-policy)
 - [Code of Conduct](#code-of-conduct)
 - [Syntax](#syntax)
   - [General](#general)
@@ -17,9 +18,13 @@ Guidelines for contributing to any PerformanC project.
 - [License](#license)
   - [Licenses](#licenses)
 
+## Security Policy
+
+To ensure proper security of all PerformanC projects, please follow the [Security Policy](SECURITY.md), documenting the security guidelines and procedures.
+
 ## Code of Conduct
 
-For assuring a welcoming community, please read and follow the [Code of Conduct](CODE_OF_CONDUCT.md). If you have any questions or concerns, please contact The PerformanC Organization: performancorg@gmail.com.
+Any PerformanC contributor must follow the [Code of Conduct](CODE_OF_CONDUCT.md), allowing better communication and collaboration between the community.
 
 ## Syntax
 
