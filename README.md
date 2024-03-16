@@ -238,18 +238,3 @@ Pull requests are used to contribute to the project. Please follow the guideline
   - Bad: `Fixed #1`
   - Good: `Fixed the connection timeout error by adding a timeout option to the connect function. See #1 for more details.`
 
-## License
-
-The licenses of the projects can only be changed by The PerformanC Organization core team. If you have any questions or concerns, please contact The PerformanC Organization.
-
-> [!IMPORTANT]
-> PerformanC Organization core team will never change the license of a project without a good reason, or with the intention of harming the community.
-
-### Licenses
-
-- [Original license](ORIGINAL_LICENSE): The base license of The PerformanC Organization.
-- [NodeLink & FrequenC license](NODES_LICENSE): Protection 
-- [PerforVNMaker license](PERFORVNMAKER_LICENSE)
-
-> [!NOTE]
-> This section is only for informative purposes. The licenses of the projects can only be changed by The PerformanC Organization core team.
