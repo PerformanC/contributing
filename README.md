@@ -71,8 +71,8 @@ PerformanC projects are divided into three categories:
 - Prohibited usage of global Node.js modules without importing (`process`, `Buffer`, etc)
 - Order of imports:
   - Node.js built-in modules. Must have `node:` prefix.
-  - Project modules.
   - Third-party modules.
+  - Project modules.
   - With a space between each group.
 - Functions may be declared before usage.
 - Code must be created as a function if used more than once, with `_` prefix. (private)
@@ -116,8 +116,8 @@ console.log(foo('no'))
 - Order of imports:
   - C standard libraries, `stdio.h` and `stdlib.h` must be first.
   - System libraries.
-  - Project libraries.
   - Third-party libraries.
+  - Project libraries.
   - Headers of the file, separated from all other imports.
   - With a space between each group.
 
