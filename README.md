@@ -47,12 +47,13 @@ PerformanC projects are divided into three categories:
 
 ### General
 
-- USe 2 spaces for indentation.
+- Use 2 spaces for indentation.
 - Use spaces instead of tabs.
 - Use single quotes over double quotes.
 - Use camelCase for variables and functions. `C` is an exception.
 - Use PascalCase for classes.
 - Use SCREAMING_SNAKE_CASE for global constants (immutable) or macros.
+- Use of comments is unrecommended, unless (extremely) required for readability.
 
 ### JavaScript / TypeScript (Node.js)
 
@@ -64,7 +65,6 @@ PerformanC projects are divided into three categories:
 - Prohibited usage of `var`.
 - Prohibited usage of `;`, unless it is required.
 - Prohibited usage of `let`, or `const` without a value, must set to `null`.
-- Prohibited comments (// or /* */) in the code.
 - Prohibited `,` in the last item of an array or object.
 - Prohibited usage of CommonJS, use ES6 instead.
 - Prohibited usage of `"`.
@@ -110,7 +110,6 @@ console.log(foo('no'))
 - Use `struct` over `typedef struct`.
 - Use `NULL` over `0`.
 - Prohibited usage of glibc or musl.
-- Prohibited comments (// or /* */) in the code.
 - Prohibited usage of GNU extensions.
 - Discounraged use of dynamic memory allocation.
 - Recommended goto usage when appropriate.
@@ -182,7 +181,6 @@ void main() {
 - Prohibited to use external CSS or JavaScript.
 - Prohibited requests to external resources, except if it is required for the project.
 - Prohibited to use any HTML, CSS or JavaScript framework or library.
-- Prohibited comments (<\!-- -->) in the code.
 
 ```html
 <!DOCTYPE html>
