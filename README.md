@@ -4,6 +4,7 @@ Guidelines for contributing to any PerformanC project.
 
 ## Table of Contents
 
+- [Contributor License Agreement](#contributor-agreement)
 - [Security Policy](#security-policy)
 - [Code of Conduct](#code-of-conduct)
 - [Syntax](#syntax)
@@ -17,6 +18,10 @@ Guidelines for contributing to any PerformanC project.
 - [Pull Requests](#pull-requests)
 - [License](#license)
   - [Licenses](#licenses)
+
+## Contributor Agreement
+
+To contribute to any PerformanC project, you must sign the Contributor License Agreement (CLA). This agreement is a legal document that clarifies the rights granted by contributors to The PerformanC Organization. By signing the CLA, you grant us the necessary rights to use your contributions in our projects. The document is available in the [CLA.md](CLA.md) file.
 
 ## Security Policy
 
